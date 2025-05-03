@@ -1,0 +1,80 @@
+.container{
+  
+display: flex;
+flex-direction: row;
+gap: 48px; /* Space between the image and text */
+padding: 92px 12px;
+justify-content: center;
+align-items: stretch;
+position: relative;
+
+  opacity: 0;
+    transition: opacity 0.2s ease-out;
+}
+
+  
+  .container.visible {
+    animation: fadeInLeft 1.2s ease-out forwards;
+  }
+.image {
+    max-width: 500px;
+    max-height: 700px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center; /* Centers the image horizontally */
+    align-items: center; /* Centers the image vertically */
+    position: relative;
+    transform: translateX(50%);
+    transition: transform 1s ease;    
+}
+.about-text{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column; /* Aligns text vertically */
+    justify-content: center; /* Centers text vertically */
+    align-items: center; /* Aligns text to the left */
+    position: relative;
+    transform: translateY(100%); /* Adjusts the vertical position of the text */
+    
+}
+.about-text h1 {
+    position:relative ;
+    transform: translateY(0); /* Adjusts the vertical position of the text */
+    width: 100%;
+    max-width: 550px;
+    text-align: end;
+    font-size: 40px;
+    font-family: sans-serif;
+    color: #1A2A44;
+    font-weight: 700;
+}
+.about-text p {
+    width: 100%;
+    max-width: 550px;
+    text-align: end;
+    font-size: 15px;
+    font-family: sans-serif;
+    color: #0E1133;
+    font-weight: 10;
+    margin-top: 10px;
+}
+@media(max-width: 768px) {
+    body{
+        overflow-x: hidden;
+    }
+    .container {
+        flex-direction: column; /* Stack the image and text vertically on smaller screens */
+        align-items: center; /* Center the content horizontally */
+    }
+    .image {
+        max-width: 400px;
+        width: 200px;
+        max-height: 400px; /* Adjust height for smaller screens */
+        transform: translateX(0); /* Reset translation for smaller screens */
+    }
+    .about-text {
+        transform: translateY(0); /* Reset translation for smaller screens */
+    }
+}

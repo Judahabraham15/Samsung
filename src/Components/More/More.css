@@ -1,0 +1,58 @@
+.container6 {
+
+    display: flex;
+    flex-direction: column; /* Stacks the contents and image vertically */
+    align-items: center; /* Centers the content horizontally */
+    justify-content: center; /* Centers the content vertically */
+    width: 100%;
+    height: 100vh; /* Optional: Full viewport height */
+    text-align: center; /* Centers the text inside the contents */
+}
+
+.contents {
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 20px;
+    flex-direction: column; /* Aligns text vertically */
+    justify-content: center; /* Centers text vertically */
+    align-items: center; /* Aligns text to the left */
+    color: #1A2A44;
+    font-family: sans-serif;
+    margin-bottom: 10px;
+    
+}
+
+.contents h1 {
+    font-size: 40px;
+    color: #1A2A44;
+    font-weight: 700;
+}
+
+.contents-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.image6 {
+    max-width: 800px;
+    width: 100%;
+    height: auto; /* Maintains the aspect ratio of the image */
+}
+@media (max-width: 768px) {
+    .container6 {
+        height: auto;
+        min-height: 100vh;
+        flex-direction: column; /* Stacks the contents and image vertically on smaller screens */
+        align-items: center; /* Centers the content horizontally */
+    }
+    .image6 {
+        transform: translateY(50%);
+        max-width: 400px; /* Adjusts width for smaller screens */
+        width: 100%;
+        height: auto; /* Maintains the aspect ratio of the image */
+    }
+}

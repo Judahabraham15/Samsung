@@ -1,0 +1,14 @@
+.navbar{
+    background: linear-gradient(to left, #00C4FF , #1A2A44);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    position: relative;
+    
+}
+.image2{
+    width: 200px;
+    border: none;
+    height: 200px;
+}
