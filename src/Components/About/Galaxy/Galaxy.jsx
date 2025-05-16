@@ -33,7 +33,7 @@ const Galaxy = () => {
 <a href="https://www.samsung.com/africa_en/smartphones/galaxy-z-fold6/" className='galaxy-button'>
 <svg
       viewBox="0 0 16 16"
-      class="bi bi-lightning-charge-fill"
+      className="bi bi-lightning-charge-fill"
       fill="currentColor"
       height={16}
       width={16}

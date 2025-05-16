@@ -4,9 +4,11 @@
     flex-direction: column; /* Stacks the contents and image vertically */
     align-items: center; /* Centers the content horizontally */
     justify-content: center; /* Centers the content vertically */
-    width: 100%;
+    width: 105%;
     height: 100vh; /* Optional: Full viewport height */
     text-align: center; /* Centers the text inside the contents */
+    overflow: hidden;
+  
 }
 
 .contents {
@@ -42,6 +44,14 @@
     width: 100%;
     height: auto; /* Maintains the aspect ratio of the image */
 }
+@media(min-width:400px) and (max-width:480px){
+    .container6{
+        width: 105.5%;
+    }
+    .contents h1{
+        font-size: 30px;
+    }
+}
 @media (max-width: 768px) {
     .container6 {
         height: auto;
@@ -54,5 +64,11 @@
         max-width: 400px; /* Adjusts width for smaller screens */
         width: 100%;
         height: auto; /* Maintains the aspect ratio of the image */
+    }
+}
+@media(max-width:1024px){
+    .image6{
+        max-width: 450px;
+        width: 100%;
     }
 }

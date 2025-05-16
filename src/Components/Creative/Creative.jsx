@@ -32,7 +32,7 @@ const Creative = () => {
     Learn More
   </a>
 </div>
-             </div>
+ </div>
              <div className="content-image">
                 <img src={buds} className='imag'/>
              </div>

@@ -8,7 +8,6 @@
     position: relative;
     overflow: hidden;
     margin: 0 auto; /* Centers the hero section horizontally */
-   
      opacity: 0;
     transition: opacity 1.2s ease-out;
 }  
@@ -93,8 +92,30 @@ justify-content: center; /* Centers the button horizontally */
 .galaxy-button svg:hover{
     transform: rotate(360deg);
     
+
 }
-@media(max-width: 480px) {
+@media(max-width:350px){
+.text3{
+
+    width: 100%;
+    max-width: 270px;
+    transform: translateX(-1%); /* Move the text slightly to the left */
+    margin-left: -10px; /* Optional: Adjust margin for finer control */
+    padding-left: 0; /* Reset padding */
+}
+.container4 {
+
+    overflow: visible;
+    height: auto;
+    min-height: 100vh;
+    max-width: 300px;
+    width: 100%;
+    padding: 92px 12px; /* Adjust padding for smaller screens */
+    flex-direction: column; /* Stack the image and text vertically on smaller screens */
+    align-items: center; /* Center the content horizontally */
+}
+}
+@media (min-width:350px) and (max-width: 480px) {
     .container4 {
         height: auto;
         min-height: 100vh;
@@ -111,10 +132,11 @@ justify-content: center; /* Centers the button horizontally */
          transform: translateX(2%);
     }
     .text3 {
+        margin: 0 0px 0 0px;
         padding-left: 0; 
         transform: translateX(0); 
         max-width: 400px;
-        width: 300px;
+        width: 350px;
         
     }
     .text3 h1 {
@@ -124,15 +146,22 @@ justify-content: center; /* Centers the button horizontally */
         font-size: 13px; 
     }
 }
-@media(max-width: 768px) {
+@media(min-width:650px) and (max-width: 768px) {
     .container4 {
+        margin:0 0 0 -100px;
         height: auto;
-        min-height: 100vh;
+        min-height: 00vh;
         width: 100%;
         padding: 92px 12px; /* Adjust padding for smaller screens */
         flex-direction: column; /* Stack the image and text vertically on smaller screens */
         align-items: center; /* Center the content horizontally */
+        overflow: visible;
     }
+   .text3{
+    max-width: 500px;
+    width: 100%;
+   
+   }
     .text3 h1 {
         font-size: 30px; 
 
@@ -147,4 +176,41 @@ justify-content: center; /* Centers the button horizontally */
         transform: translateX(2%);
      
     }
+}
+@media(max-width:800px){
+    .imagess{
+        max-width: 400px;
+        width: 300px;
+        transform: translateX(5%);
+    }
+}
+@media(min-width:800px) and (max-width:1100px){
+    .text3 p{
+        max-width: 400px;
+       width: 100%;
+       font-size: 15px;
+    }
+    .imagess{
+        max-width: 400px;
+        width: 300px;
+        transform: translateX(0%);
+    }
+}  
+@media(min-width:481px) and (max-width:650px) {
+    .container4{
+        margin: 0 0 0 -50px;
+        padding: 92px 12px;
+        flex-direction: column;
+    }
+  .text3{
+    margin: 0px 0px 0px ;
+    width: 100%;
+    max-width: 400px;
+    padding: 0;
+    margin: 0;
+  }
+  .text3 h1{
+    font-size: 25px;
+    width: 100%;
+  }
 }

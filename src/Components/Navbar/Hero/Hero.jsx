@@ -35,7 +35,7 @@ const Hero = () => {
   return (
     <div className="hero">
     
-      
+     
       <div className="hero-text">
         <h1>
           Unleash Your World And Experience With Samsung{' '}
@@ -47,7 +47,7 @@ const Hero = () => {
           integration with the Galaxy ecosystem."
         </p>
         <div className="btn">
-          <a href='https://www.samsung.com/us/smartphones/' className="hero-button">
+          <a href='https://www.samsung.com/us/smartphones/' target='_blank' className="hero-button">
             <svg
               viewBox="0 0 16 16"
               className="bi bi-lightning-charge-fill"

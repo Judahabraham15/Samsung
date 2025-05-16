@@ -12,3 +12,18 @@
     border: none;
     height: 200px;
 }
+@media(max-width:480px){
+    .navbar{
+        width:105.5%;
+    }
+}
+@media(min-width:800px){
+    .navbar{
+        width: 105%;
+    }
+}
+@media(max-width:800px){
+    .navbar{
+        width: 105%;
+    }
+}
