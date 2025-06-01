@@ -75,9 +75,6 @@
     transform: translateX(-20%); /* Adjusts the vertical position of the image */
     transition: transform 1s ease;    
 }
-.images:hover{
-    transform: scale(1.2);
-}
 .btn{
     display: flex;
     justify-content: center; /* Centers the button horizontally */

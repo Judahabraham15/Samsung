@@ -22,6 +22,7 @@
     height: 100%;
     z-index: 5; /* Ensure bubbles are above other elements */
     pointer-events: none; /* Prevent bubbles from interfering with user interactions */
+    display: none;
 
 }
 .bubble {
@@ -144,10 +145,16 @@
         font-size: 14px;
         text-align: center /* Adjusts font size for smaller screens */
     }
+    .bubbles{
+        display: block;
+    }
 }
 @media(min-width:800px){
     .container2{
         width: 105%;
+    }
+    .bubbles{
+        display: block;
     }
 }
 @media(max-width:800px){
